@@ -3,7 +3,6 @@
 namespace Marqant\LighthouseJson\GraphQL\Scalars;
 
 use Exception;
-use JsonException;
 use GraphQL\Error\Error;
 use GraphQL\Language\AST\Node;
 use Safe\Exceptions\JsonException;
