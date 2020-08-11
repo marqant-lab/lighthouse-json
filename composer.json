@@ -7,7 +7,30 @@
         {
             "name": "Thomas Venturini",
             "email": "thomas@du.digital"
+        },
+        {
+            "name": "Dmytro Sydorenko",
+            "email": "dmytro@du.digital"
         }
     ],
-    "require": {}
+    "require": {
+        "nuwave/lighthouse": "^4.13"
+    },
+    "autoload": {
+        "psr-4": {
+            "Marqant\\LighthouseJson\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Marqant\\LighthouseJson\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Marqant\\LighthouseJson\\Providers\\LighthouseJsonServiceProvider"
+            ]
+        }
+    }
 }
