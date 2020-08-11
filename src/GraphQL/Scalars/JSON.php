@@ -1,6 +1,6 @@
 <?php
 
-namespace App\GraphQL\Scalars;
+namespace Marqant\LighthouseJson\GraphQL\Scalars;
 
 use Exception;
 use JsonException;
@@ -81,4 +81,3 @@ class JSON extends ScalarType
         return $parsed;
     }
 }
-

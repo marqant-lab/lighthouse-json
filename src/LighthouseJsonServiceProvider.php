@@ -1,11 +1,11 @@
 <?php
 
-namespace Marqant\LighthouseJosn;
+namespace Marqant\LighthouseJson;
 
 use Illuminate\Support\ServiceProvider;
 
 /** @package Marqant\LighthouseJosn */
-class LighthouseJosnServiceProvider extends ServiceProvider
+class LighthouseJsonServiceProvider extends ServiceProvider
 {
     /**
      * Register any application services.

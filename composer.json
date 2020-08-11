@@ -29,7 +29,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Marqant\\LighthouseJson\\Providers\\LighthouseJsonServiceProvider"
+                "Marqant\\LighthouseJson\\LighthouseJsonServiceProvider"
             ]
         }
     }
