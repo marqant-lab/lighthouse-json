@@ -1,0 +1,13 @@
+{
+    "name": "marqant-lab/lighthouse-json",
+    "description": "JSON Scalar for lighthouse-php.",
+    "type": "package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Thomas Venturini",
+            "email": "thomas@du.digital"
+        }
+    ],
+    "require": {}
+}
