@@ -16,11 +16,16 @@ class JsonScalarTest extends TestCase
     protected function setUp(): void
     {
         parent::setUp();
+    }
 
-        $this->mockResolver(function () {
-            return [
-                'foo' => 'bar'
-            ];
+    public function testGetJson(): void
+    {
+        $testData = [
+            'foo' => 'bar'
+        ];
+
+        $this->mockResolver(function () use ($testData) {
+            return $testData;
         });
 
         $this->schema = /** @lang GraphQL */'
@@ -32,18 +37,19 @@ class JsonScalarTest extends TestCase
         ';
 
         $this->setUpTestSchema();
-    }
 
-    public function testGetJson(): void
-    {
         $response = $this->graphQL(/** @lang GraphQL */ '
             {
                 getJson
             }
         ');
 
-        dd($response->getContent());
-
         $response->assertStatus(200);
+
+        $response->assertExactJson([
+            'data' => [
+                'getJson' => $testData
+            ]
+        ]);
     }
 }
