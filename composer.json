@@ -18,12 +18,8 @@
     },
     "autoload": {
         "psr-4": {
+            "Marqant\\LighthouseJson\\Tests\\": "tests/",
             "Marqant\\LighthouseJson\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Marqant\\LighthouseJson\\Tests\\": "tests/"
         }
     },
     "extra": {

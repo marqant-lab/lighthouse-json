@@ -4,7 +4,6 @@ namespace Marqant\LighthouseJson;
 
 use Illuminate\Support\ServiceProvider;
 
-/** @package Marqant\LighthouseJson */
 class LighthouseJsonServiceProvider extends ServiceProvider
 {
     /**
