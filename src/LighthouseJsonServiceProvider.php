@@ -33,6 +33,9 @@ class LighthouseJsonServiceProvider extends ServiceProvider
      */
     private function registerScalars(): void
     {
-        config(['lighthouse.namespaces.scalars' => array_merge((array) config('lighthouse.namespaces.scalars'), (array) 'Marqant\\LighthouseJson\\GraphQL\\Scalars')]);
+        config(['lighthouse.namespaces.scalars' => array_merge(
+            (array) config('lighthouse.namespaces.scalars'),
+            (array) 'Marqant\\LighthouseJson\\GraphQL\\Scalars'
+        )]);
     }
 }
