@@ -14,7 +14,7 @@
         }
     ],
     "require": {
-        "nuwave/lighthouse": "^4.13||^5.23"
+        "nuwave/lighthouse": "^4.13||^5.23||^6.8"
     },
     "autoload": {
         "psr-4": {
